@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript Assignment</title>
+</head>
+<body>
+
+<input type="" name="" id="display" value="" style="font-size: 4em; height: 150px; width: 700px; border: 2px solid black;">
+<button onclick="myStatement()" style="font-size: 4em; font-weight: bold; height: 150px; width: 200px; border-radius: 25px; background-color: red; margin-left: 10px; outline: none; border: 1px solid red;">Click</button>
+
+<div id="result" style="height: 200px; width: 100%; background-color: #000; color: #fff ; margin-top: 20px; font-size: 4em; font-weight: bold;"></div> 
+
+<script type="text/javascript">
+	var grade = display;
+	function myStatement () {
+		 if (grade.value < 0) {
+			result.innerHTML = "Out of Range!";
+		} else if (grade.value <= 39) {
+			result.innerHTML = "Fail!";
+		} else if (grade.value <= 44) {
+			result.innerHTML = "Pass!";
+		} else if (grade.value <= 49) { 
+			result.innerHTML = "Fair!";
+		} else if (grade.value <= 59) {
+			result.innerHTML = "Average!";
+		} else if (grade.value <= 69) {
+			result.innerHTML = "Good!";
+		} else if (grade.value <= 100) {
+			result.innerHTML = "Excellent!";
+		} else if (grade.value >100) {
+			result.innerHTML = "Out of Range!";
+		} else {
+			result.innerHTML = "Please, type a number!"
+		}
+	}
+
+</script>
+
+</body>
+</html>
